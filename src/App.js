@@ -18,7 +18,7 @@ function App() {
       </div>
 
       {/* Centered Heading */}
-      <h1 className="heading">Quiz App</h1>
+      <h1 className="heading">Quiz Game</h1>
 
       <Quiz />
     </div>
