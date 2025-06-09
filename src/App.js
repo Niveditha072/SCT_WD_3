@@ -10,9 +10,16 @@ function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <button className="theme-toggle" onClick={toggleTheme}>
-         {darkMode ? <Sun size={24} /> : <Moon size={24} />}
-     </button>
+      {/* Top bar for theme toggle */}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {darkMode ? <Sun size={26} /> : <Moon size={26} />}
+        </button>
+      </div>
+
+      {/* Centered Heading */}
+      <h1 className="heading">Quiz App</h1>
+
       <Quiz />
     </div>
   );
